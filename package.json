@@ -1,0 +1,20 @@
+{
+  "name": "testcafe_pom",
+  "version": "1.0.0",
+  "description": "TestCafe project with Page Object Model structure (json)",
+  "main": "index.js ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-all-chrome": "testcafe chrome ./page_model/tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcosandovalr/testcafe_pom.git"
+  },
+  "author": "Marco Sandoval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosandovalr/testcafe_pom/issues"
+  },
+  "homepage": "https://github.com/marcosandovalr/testcafe_pom#readme"
+}
