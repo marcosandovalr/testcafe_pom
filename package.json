@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marcosandovalr/testcafe_pom/issues"
   },
-  "homepage": "https://github.com/marcosandovalr/testcafe_pom#readme"
+  "homepage": "https://github.com/marcosandovalr/testcafe_pom#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
