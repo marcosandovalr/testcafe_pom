@@ -22,12 +22,17 @@ $ npm install -g testcafe
 $ git clone https://github.com/marcosandovalr/testcafe_pom.git
 ```
 
-2. Run the tests typing into the console or terminal 
+2a. Run tests in all installed browsers
+```
+$ npm run test-all
+```
+
+2b. Run tests in `Google Chrome`
 ```
 $ npm run test-all-chrome
 ```
 
-or for just one test
+2c. Run just one test
 ```
 $ testcafe <browser_name> './page_model/tests/<test_name>.js'
 ```
