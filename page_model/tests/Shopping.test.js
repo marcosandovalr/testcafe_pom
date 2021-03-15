@@ -1,14 +1,15 @@
 import LoginPage from '../pages/LoginPage'
 import ProductPage from '../pages/ProductPage'
+import ShoppingCartPage from '../pages/ShoppingCartPage'
 import { CREDENTIALS } from '../data/Constants'
 
-fixture('Logout feature testing')
+fixture('Shopping feature testing')
     .page `https://www.saucedemo.com/`
     .beforeEach(async t => {
         await LoginPage.submitLoginForm(CREDENTIALS.VALID_USER.USERNAME, CREDENTIALS.VALID_USER.PASSWORD)
+        await t.click(ProductPage.shoppingCartLink)
     })
 
-test('3. Logout from product\'s page', async t => { 
-    await ProductPage.logout()
-    await t.expect(LoginPage.loginButton.exists).ok()
+test('4. Navigate to the shopping cart', async t => { 
+    await t.expect(ShoppingCartPage.pageTitle.exists).ok()
 })
