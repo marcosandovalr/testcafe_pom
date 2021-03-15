@@ -5,6 +5,7 @@ class LoginPage{
         this.userField = Selector('#user-name')
         this.passField = Selector('#password')
         this.loginButton = Selector('#login-button')
+        this.errorMessage =  Selector('#login_button_container h3')
     }
 
     async submitLoginForm(user, pass){
