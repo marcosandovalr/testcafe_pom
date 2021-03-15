@@ -1,8 +1,8 @@
 import { Selector, t } from 'testcafe'
 
-class UserInfoPage{
+class OverviewPage{
     constructor(){
-        this.pageTitle = Selector('.subheader').withExactText('Checkout: Your Information')
+        this.pageTitle = Selector('.subheader').withExactText('Checkout: Overview')
         this.continueButton = Selector('.btn_primary.cart_button')
         this.errorMessage =  Selector('h3[data-test="error"]')
         this.firstNameField = Selector('#first-name')
@@ -10,7 +10,7 @@ class UserInfoPage{
         this.zipCodeField = Selector('#postal-code')
     }
 
-    async submitUserForm(firstName, lastName, zip){
+    async submittUserForm(firstName, lastName, zip){
         await t
             .typeText(this.firstNameField, firstName, {paste: true})
             .typeText(this.lastNameField, lastName, {paste: true}) 
@@ -19,4 +19,4 @@ class UserInfoPage{
     }
 }
 
-export default new UserInfoPage()
+export default new OverviewPage()

@@ -9,5 +9,10 @@ export const CREDENTIALS = {
     INVALID_USER: {
         USERNAME: process.env.USER_INVALID,
         PASSWORD: process.env.PASS_INVALID
+    },
+    USER_DATA:{
+        FIRSTNAME: 'Marco',
+        LASTNAME: 'Sandoval',
+        ZIP: '45609'
     }
 }
