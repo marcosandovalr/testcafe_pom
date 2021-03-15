@@ -1,0 +1,114 @@
+{
+  "startTime": "2021-03-15T22:41:43.949Z",
+  "endTime": "2021-03-15T22:42:02.520Z",
+  "userAgents": [
+    "Chrome 89.0.4389.82 / macOS 11.2.1"
+  ],
+  "passed": 10,
+  "total": 10,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Login feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Login.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "1. Login with a valid user",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1713,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "2. Login with an invalid user",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1110,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Logout feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Logout.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "3. Logout from product's page",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2079,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Shopping feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Shopping.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "4. Navigate to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1138,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "5. Add a single item to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1383,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "6. Add multiple items to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1441,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "7. Continue with missing mail information",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1861,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "8. Fill user's information",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2611,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "9. Final order items",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2498,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "10. Complete purchase",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2662,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

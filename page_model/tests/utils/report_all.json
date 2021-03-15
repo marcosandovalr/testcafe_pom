@@ -1,0 +1,116 @@
+{
+  "startTime": "2021-03-15T22:43:12.312Z",
+  "endTime": "2021-03-15T22:43:51.125Z",
+  "userAgents": [
+    "Firefox 86.0 / macOS 10.16",
+    "Chrome 88.0.4324.192 / macOS 11.2.1",
+    "Safari 14.0.3 / macOS 10.15.6"
+  ],
+  "passed": 10,
+  "total": 10,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Login feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Login.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "1. Login with a valid user",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4165,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "2. Login with an invalid user",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4171,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Logout feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Logout.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "3. Logout from product's page",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5369,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Shopping feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Shopping.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "4. Navigate to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3890,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "5. Add a single item to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4750,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "6. Add multiple items to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5290,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "7. Continue with missing mail information",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5827,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "8. Fill user's information",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5991,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "9. Final order items",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6267,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "10. Complete purchase",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6524,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

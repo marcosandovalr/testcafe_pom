@@ -1,0 +1,36 @@
+{
+  "startTime": "2021-03-15T22:41:19.634Z",
+  "endTime": "2021-03-15T22:41:22.332Z",
+  "userAgents": [
+    "Chrome 89.0.4389.82 / macOS 11.2.1"
+  ],
+  "passed": 2,
+  "total": 2,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Login feature testing",
+      "path": "/Users/marcos/Documents/automation/testcafe_pom/page_model/tests/Login.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "1. Login with a valid user",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1800,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "2. Login with an invalid user",
+          "meta": {},
+          "errs": [],
+          "durationMs": 880,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}
