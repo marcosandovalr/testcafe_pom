@@ -15,6 +15,13 @@ class ProductPage{
             .click(this.menuButton)
             .click(this.logoutLink)
     }
+
+    async addMultipleItems(){
+        await t
+            .click(this.addBackpackButton)
+            .click(this.addTshirtButton)
+            .click(this.shoppingCartLink)
+    }
 }
 
 export default new ProductPage()

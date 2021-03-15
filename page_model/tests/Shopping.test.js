@@ -1,6 +1,7 @@
 import LoginPage from '../pages/LoginPage'
 import ProductPage from '../pages/ProductPage'
 import ShoppingCartPage from '../pages/ShoppingCartPage'
+import UserInfoPage from '../pages/UserInfoPage'
 import { CREDENTIALS } from '../data/Constants'
 
 fixture('Shopping feature testing')
@@ -22,11 +23,18 @@ test('5. Add a single item to the shopping cart', async t => {
 })
 
 test('6. Add multiple items to the shopping cart', async t => { 
-    await t
-        .click(ProductPage.addBackpackButton)
-        .click(ProductPage.addTshirtButton)
-        .click(ProductPage.shoppingCartLink)
+    await ProductPage.addMultipleItems()
     await t
         .expect(ShoppingCartPage.backpackLink.exists).ok()
         .expect(ShoppingCartPage.tshirtLink.exists).ok()
+})
+
+test('7. Continue with missing mail information', async t => { 
+    await ProductPage.addMultipleItems()
+    await t
+        .click(ShoppingCartPage.checkoutButton)
+        .click(UserInfoPage.continueButton)
+    await t
+        .expect(UserInfoPage.errorMessage.exists).ok()
+        .expect(UserInfoPage.errorMessage.innerText).contains('Error')
 })
