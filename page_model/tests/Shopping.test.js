@@ -47,3 +47,12 @@ test('8. Fill user\'s information', async t => {
     await UserInfoPage.submitUserForm(CREDENTIALS.USER_DATA.FIRSTNAME, CREDENTIALS.USER_DATA.LASTNAME, CREDENTIALS.USER_DATA.ZIP)
     await t.expect(OverviewPage.pageTitle.exists).ok()
 })
+
+test.only('9. Final order items', async t => { 
+    await ProductPage.addMultipleItems()
+    await t.click(ShoppingCartPage.checkoutButton)
+    await UserInfoPage.submitUserForm(CREDENTIALS.USER_DATA.FIRSTNAME, CREDENTIALS.USER_DATA.LASTNAME, CREDENTIALS.USER_DATA.ZIP)
+    await t
+        .expect(OverviewPage.backpackLink.exists).ok()
+        .expect(OverviewPage.tshirtLink.exists).ok()
+})
